@@ -1,0 +1,44 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    A propos
+{% endblock %}
+
+{% block body %}
+
+    <br>
+    <br>
+    <section class="mt-5 pt-4">
+        <!-- Parallax container-->
+        <div class="jarallax mt-2" data-jarallax data-speed="0.5">
+            <!-- Parallax image-->
+            <div class="jarallax-img bg-secondary" style="background-image: url(assets/img/hero-bg-senior.png); background-position: 36% center !important;"></div>
+            <!-- Section content-->
+            <div class="container py-3">
+                <!-- Breadcrumb-->
+                <nav class="pt-3" aria-label="breadcrumb">
+                    <ol class="breadcrumb breadcrumb-light mb-lg-5">
+                        <li class="breadcrumb-item "><a class="text-dark" href="/">Accueil</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">A propos</li>
+                    </ol>
+                </nav>
+                <!-- Text-->
+                <div class="col-md-6 col-sm-8 py-md-5 py-4 px-0">
+                    <h1 class="display-4 text-dark mb-4 pb-md-2 ">
+                        Le projet Senior plus en détail
+                    </h1>
+                    <p class="pb-3 lead text-light">
+                        Senior Plus est un projet qui a pour but de faciliter la vie des personnes âgées en leur proposant des services adaptés à leurs besoins. Nous avons pour objectif de leur permettre de rester le plus longtemps possible à leur domicile en leur apportant une aide au quotidien.
+                    </p>
+
+                    <a class="btn btn-primary" href="assets/img/projet associatif1.pdf">
+                        Consulter l'intégralité du projet
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+{% endblock %}

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Senior plus{% endblock %}</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" rel="stylesheet">]
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+        <link rel="stylesheet" href="{{ asset('assets/css/theme.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('assets/vendor/simplebar/dist/simplebar.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('assets/vendor/prismjs/themes/prism.css') }}">
+        <link rel="stylesheet" href="{{ asset('assets/vendor/tiny-slider/dist/tiny-slider.css') }}">
+        <link rel="stylesheet" href="{{ asset('assets/vendor/prismjs/plugins/line-numbers/prism-line-numbers.css') }}">
+        <link rel="stylesheet" href="{{ asset('assets/vendor/nouislider/dist/nouislider.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('assets/vendor/flatpickr/dist/flatpickr.min.css') }}">
+    </head>
+    <body>
+
+    <header class="navbar d-flex flex-column fixed-top navbar-expand-lg mb-5 navbar-dark bg-dark navbar-stuck">
+        <nav class=" d-none d-lg-block">
+            <ul class="nav d-flex justify-content-end bg-transparent mb-3">
+                <li class="nav-item">
+                    <a class="nav-link text-bg-warning" href="tel:01 34 05 04 44">
+                        Soisy-s/Mtcy:  01 34 05 04 44
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-bg-warning" href="tel:01 34 05 23 60">
+                        Asnières-sur-seine: 01 34 05 23 60
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-bg-secondary" href="tel:01 34 05 23 66">
+                        Garges-lès-Gonesse: 01 34 05 23 66
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-bg-secondary" href="tel:05 57 52 20 76">
+                        Gujan-Mestras: 05 57 52 20 76
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="container">
+            <a class="navbar-brand me-3 d-flex  me-xl-4" href="/">
+                <img class="d-block" src="assets/img/logo-icon.png" width="40" alt="Senior plus"> &nbsp;&nbsp;
+                Senior plus
+            </a>
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+{#            <a class="btn btn-primary d-none d-md-block btn-sm ms-2 order-lg-3" href="">#}
+{#                <i class="fi-file me-2"></i>#}
+{#                Rejoignez-nous ! Postulez maintenant pour devenir auxiliaire de vie.#}
+{#            </a>#}
+            <div class="collapse navbar-collapse order-lg-2" id="navbarNav">
+                <ul class="navbar-nav mx-auto navbar-nav-scroll" style="max-height: 35rem;">
+                    <!-- Menu items-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Accueil</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#nosprestations" role="button">Nos prestations</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tarifs">
+                            Nos tarifs
+                        </a>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact">
+                            Contactez-nous
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    {% block body %}{% endblock %}
+
+
+    <footer class="footer pt-lg-5 pt-4 bg-dark text-light">
+        <div class="container mb-4 py-4 pb-lg-5">
+            <div class="row gy-4">
+                <div class="col-lg-3 col-md-6 col-sm-4">
+                    <div class="mb-4 pb-sm-3">
+                        <a class="d-inline-block text-decoration-none" href="/">
+                            <img class="d-block" src="assets/img/logo-icon.png" width="116" alt="Senior plus"> &nbsp;&nbsp;
+                            <span class="text-white">
+                            Senior plus
+                        </span>
+                        </a>
+                    </div>
+                    <ul class="nav nav-light flex-column">
+                        <li class="nav-item mb-2">
+                            <a class="nav-link p-0 fw-normal text-light text-nowrap" href="mailto:seniorplus@orange.fr">
+                                <i class="fi-mail mt-n1 me-1 align-middle text-primary"></i>
+                                seniorplus@orange.fr
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Links-->
+                <div class="col-lg-2 col-md-3 col-sm-4">
+                    <h3 class="fs-base text-light">
+                        Liens utiles
+                    </h3>
+                    <ul class="list-unstyled fs-sm">
+                        <li><a class="nav-link-light" href="index.html">Accueil</a></li>
+                        <li><a class="nav-link-light" href="#nosprestations">Nos prestations</a></li>
+                        <li><a class="nav-link-light" href="#tarifs">Nos tarifs</a></li>
+                    </ul>
+                </div>
+
+                <!-- Subscription form-->
+                <div class="col-lg-4 offset-lg-1 ">
+                    <a href="/contact" class="btn btn-primary" >Contactez-nous</a>
+                </div>
+            </div>
+        </div>
+        <div class="py-4 border-top border-light">
+            <div class="container d-flex flex-column flex-lg-row align-items-center justify-content-between py-2">
+                <!-- Copyright-->
+                <p class="order-lg-1 order-2 fs-sm mb-2 mb-lg-0"><span class="text-light opacity-60">
+                &copy;  Tous droits réservés -
+            </span><a class="nav-link-light fw-bold" href="https://www.ass-seniorplus.fr/" target="_blank" rel="noopener">
+                        Senior plus
+                    </a></p>
+                <div class="d-flex flex-lg-row flex-column align-items-center order-lg-2 order-1 ms-lg-4 mb-lg-0 mb-4">
+                    <!-- Links-->
+                    <div class="d-flex flex-wrap fs-sm mb-lg-0 mb-4 pe-lg-4">
+                        <a class="nav-link-light px-2 mx-1" href="/about">A propos de nous</a>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <div class="ms-4 ps-lg-2 text-nowrap">
+                            <a class="btn btn-icon btn-translucent-light btn-xs rounded-circle ms-2" href="#">
+                                <i class="fi-facebook"></i>
+                            </a>
+                            <a class="btn btn-icon btn-translucent-light btn-xs rounded-circle ms-2" href="#">
+                                <i class="fi-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+        <script src="{{ asset('assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js') }}"></script>
+        <script src="{{ asset('assets/vendor/simplebar/dist/simplebar.min.js') }}"></script>
+        <script src="{{ asset('assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js') }}"></script>
+        <script src="{{ asset('assets/vendor/tiny-slider/dist/min/tiny-slider.js') }}"></script>
+        <script src="{{ asset('assets/vendor/parallax-js/dist/parallax.min.js') }}"></script>
+        <script src="{{ asset('assets/vendor/nouislider/dist/nouislider.min.js') }}"></script>
+        <script src="{{ asset('assets/vendor/jarallax/dist/jarallax.min.js') }}"></script>
+        <script src="{{ asset('assets/vendor/prismjs/plugins/line-numbers/prism-line-numbers.min.js') }}"></script>
+        <script src="{{ asset('assets/vendor/prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js') }}"></script>
+        <script src="{{ asset('assets/js/theme.min.js') }}"></script>
+
+    {% block javascripts %}{% endblock %}
+    </body>
+</html>

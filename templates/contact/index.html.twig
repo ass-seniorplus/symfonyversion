@@ -1,0 +1,187 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    Contactez-nous
+{% endblock %}
+
+{% block body %}
+
+
+    <section class="container my-5 pt-5 pb-lg-5">
+        <!-- Breadcrumb-->
+        <nav class="mb-4 pt-md-3" aria-label="Breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="index.html">Accueil</a></li>
+                <li class="breadcrumb-item active" aria-current="page">
+                    Contactez-nous
+                </li>
+            </ol>
+        </nav>
+        <div class="row gy-4">
+            <div class="col-lg-4 col-md-6">
+                <div class="mb-md-5">
+                    <h1 class="mb-md-4 text-primary">
+                        Contactez-nous
+                    </h1>
+                </div>
+                <div class="d-flex align-items-start mb-4 pb-md-3">
+                    <div>
+                        <h3 class="h6 mb-1 pb-1 text-dark">Email </h3>
+                        <p class="mb-0 text-light">
+                            <a class="text-nowrap" href="mailto:seniorplus@orange.fr">
+                                seniorplus@orange.fr
+                            </a>
+                        </p>
+                    </div>
+                </div>
+
+                <h3 class="h6">
+                    Nos bureaux sont ouverts du lundi au vendredi de 9h à 13h et de 14h à 17h.
+                </h3>
+
+                <hr>
+                <br>
+
+                <div class="d-flex align-items-start mb-4 pb-md-3">
+                    <div>
+                        <h3 class="h6 mb-2 pb-1 text-dark">Soisy-sous-Montmorency</h3>
+                        <p class="mb-0 text-dark">
+                            <span class="">18 Avenue Voltaire 95230</span><br>
+                            <a class="text-nowrap" href="tel:+33134050444">01 34 05 04 44</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="d-flex align-items-start mb-4 pb-md-3">
+                    <div>
+                        <h3 class="h6 mb-2 pb-1 text-dark">Asnières-sur-Seine </h3>
+                        <p class="mb-0 text-dark">
+                            <span class=""> 4, Rue Mortinat 92600</span><br>
+                            <a class="text-nowrap" href="tel:+33134052360">01 34 05 23 60</a>
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="d-flex align-items-start mb-4 pb-md-3">
+                    <div>
+                        <h3 class="h6 mb-2 pb-1 text-dark">
+                            Garges-lès-Gonesse
+                        </h3>
+                        <p class="mb-0 text-dark">
+                        <span class="">
+                            36 Avenue Frederic Joliot Curie 95140
+                        </span><br>
+                            <a class="text-nowrap" href="tel:+33134052360">01 34 05 23 60</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="d-flex align-items-start mb-4 pb-md-3">
+                    <div>
+                        <h3 class="h6 mb-2 pb-1 text-dark">
+                            Gujan-Mestras
+                        </h3>
+                        <p class="mb-0 text-dark">
+                        <span class="">
+                            28, Rue Edmond Daubric 33470
+                        </span><br>
+                            <a class="text-nowrap" href="tel:+33557522076">05 57 52 20 76</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="d-flex align-items-start mb-4 pb-md-3">
+                    <div>
+                        <h3 class="h6 text-dark">
+                            Permanence
+                        </h3>
+                        <p class="mb-0 text-dark">
+                            <a class="text-nowrap" href="tel:+33603568475">06 03 56 84 75</a>
+                        </p>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+            <div class="col-md-6 offset-lg-2">
+                <h2 class="h4 mb-4 pb-2 text-primary">
+                    Formulaire de contact
+                </h2>
+
+                {{ form_start(form, {'attr': {'class': 'needs-validation', 'novalidate': 'novalidate', 'method': 'post'}}) }}
+
+                <div class="row">
+                    <div class="mb-3">
+                        {{ form_label(form.nomComplet, 'Nom Complet', {'label_attr': {'class': 'form-label'}}) }}
+                        {{ form_widget(form.nomComplet, {'attr': {'class': 'form-control', 'placeholder': 'Nom Complet'}}) }}
+                        {{ form_errors(form.nomComplet) }}
+                    </div>
+
+                    <div class="mb-3">
+                        {{ form_label(form.email, 'Email', {'label_attr': {'class': 'form-label'}}) }}
+                        {{ form_widget(form.email, {'attr': {'class': 'form-control', 'placeholder': 'Email'}}) }}
+                        {{ form_errors(form.email) }}
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    {{ form_label(form.telephone, 'Téléphone (Format français uniquement)', {'label_attr': {'class': 'form-label'}}) }}
+                    {{ form_widget(form.telephone, {'attr': {'class': 'form-control', 'placeholder': '01 23 45 67 89'}}) }}
+                    {{ form_errors(form.telephone) }}
+                </div>
+
+                <div class="mb-3">
+                    {{ form_label(form.typeAide, 'Type d\'Aide', {'label_attr': {'class': 'form-label'}}) }}
+                    {{ form_widget(form.typeAide, {'attr': {'class': 'form-select'}}) }}
+                    {{ form_errors(form.typeAide) }}
+                </div>
+
+                <div class="mb-3">
+                    {{ form_label(form.message, 'Message', {'label_attr': {'class': 'form-label'}}) }}
+                    {{ form_widget(form.message, {'attr': {'class': 'form-control', 'placeholder': 'Votre message'}}) }}
+                    {{ form_errors(form.message) }}
+                </div>
+
+                <div class="mb-3">
+                    <div class="g-recaptcha" data-sitekey="6LdZ_oUpAAAAADdmRJKdhYgmL4JhHuDoH_6n-801" data-action="LOGIN"></div>
+                    <div id="recaptcha-error" class="invalid-feedback" style="display: none;">Veuillez valider le reCAPTCHA.</div>
+                </div>
+
+                {{ form_widget(form._token) }}
+
+                <div class="button-area">
+                    <span></span>
+                    <br>
+                    <button id="submit-btn" class="btn btn-primary" type="submit">Envoyer</button>
+                </div>
+
+                {{ form_end(form) }}
+
+                <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+            </div>
+        </div>
+    </section>
+
+
+
+{% endblock %}
+
+
+{% block javascripts %}
+    <script>
+        document.getElementById("submit-btn").addEventListener("click", function(event) {
+            var response = grecaptcha.getResponse();
+            console.log(response);
+            if (response.length === 0) {
+                event.preventDefault();
+                document.getElementById('recaptcha-error').style.display = 'block';
+            }
+        });
+    </script>
+
+{% endblock %}

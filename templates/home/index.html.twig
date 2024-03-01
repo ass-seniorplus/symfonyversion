@@ -1,0 +1,454 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Senior plus{% endblock %}
+
+{% block body %}
+
+    <br> <br><br> <br>
+
+    <section class="container py-5 mt-5 mb-5 mt-n3 mt-lg-0 custom-margin" id="nosprestations">
+        <div class="row gx-4 mx-0 py-3">
+            <div class="col-md-4 mb-3" >
+                <div class="card card-hover  h-100 pb-2 pb-sm-3 px-sm-3 text-center">
+                    <img class="d-block mx-auto my-3" src="assets/img/services/Solidarity-cuate.png" width="256" alt="Illustration">
+                    <div class="card-body">
+                        <h5 class="h4 card-title">
+                            Aide et maintien à domicile
+                        </h5>
+
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                Aide et maintien à domicile aux personnes âgées et/ou en mobilité réduite,
+                            </li>
+                            <li class="list-group-item">
+                                Panier de services
+                            </li>
+                            <li class="list-group-item">
+                                Aide au nettoyage, lavage, repassage - Vaisselle, Linge, actes quotidiens etc....
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="card-footer pt-0 border-0">
+                        <a class="btn btn-outline-primary stretched-link" href="assets/img/services/Menage-Jardinage.pdf">
+                            En savoir plus
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card card-hover  h-100 pb-2 pb-sm-3 px-sm-3 text-center">
+                    <img class="d-block mx-auto my-3" src="assets/img/services/helpoldperson.png" width="256" alt="Illustration">
+                    <div class="card-body">
+                        <h5 class="h4 card-title">
+                            Service à la personne
+                        </h5>
+
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                Aide à la toilette, habillage, appareillage.
+                            </li>
+                            <li class="list-group-item">
+                                Aide aux repas, lever, coucher, déplacements dans le logement.
+                            </li>
+                            <li class="list-group-item">
+                                Assistance pour l'exercice d'une activité professionnelle.
+                            </li>
+                            <li class="list-group-item">
+                                Activité quelconque ou de démarches administratives. etc...
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="card-footer pt-0 border-0">
+                        <a class="btn btn-outline-primary stretched-link" href="assets/img/services/ServPers.pdf">
+                            En savoir plus
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card card-hover  h-100 pb-2 pb-sm-3 px-sm-3 text-center">
+                    <img class="d-block mx-auto my-3" src="assets/img/services/car.png" width="256" alt="Illustration">
+                    <div class="card-body">
+                        <h5 class="h4 card-title">
+                            Accompagnement
+                        </h5>
+
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                Accompagner et aider la personne dans les activités de la vie sociale et relationnelle.
+                            </li>
+                            <li class="list-group-item">
+                                Accompagnement dans les activités domestiques et administratives, de loisirs, de la vie sociale, etc, .
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="card-footer pt-0 border-0">
+                        <a class="btn btn-outline-primary stretched-link" href="assets/img/services/accompagnement.pdf">
+                            En savoir plus
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container mb-5 pb-2 pb-lg-4">
+        <div class="row align-items-center">
+            <div class="col-md-5"><img class="d-block mx-md-0 mx-auto mb-md-0 mb-4" src="assets/img/services/Calculator.png" width="416" alt="Illustration"></div>
+            <div class="col-xxl-6 col-md-7 text-md-start text-center">
+                <h2>
+                    Simulateur de services
+                </h2>
+                <p class="pb-3 fs-lg">
+                    Estimez le coût de vos services  en fonction de vos besoins et de votre budget ! <br>
+                    <strong>Vous pouvez également nous contacter pour un devis personnalisé.</strong> <br>
+                </p>
+                <a class="btn btn-lg btn-primary" href="#cost-calculator" data-bs-toggle="modal">
+                    <i class="fi-calculator me-2"></i>
+                    Calculer le coût de mes services
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="container pt-2 pt-sm-0 p-4 pb-md-5 mb-2 mb-md-1" id="tarifs">
+        <h2 class="h3 pb-3">
+            Nos tarifs
+        </h2>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card border-1 card-hover">
+                    <div class="card-body">
+                        <h2 class="h5 fw-normal fw-bolder text-center py-1 mb-0">
+                            Prestataire
+                        </h2>
+                        <div class="d-flex align-items-end justify-content-center mb-4"></div>
+                        <ul class="list-unstyled d-block mb-9 mx-auto" style="max-width: 16rem;">
+                            <li class="d-flex mb-3">
+                                <span class="text-primary fw-bolder">
+                                    Soisy sous Montmorency , Garges-Les-Gonesse
+                                </span>
+                            </li>
+                            <li class="d-flex">
+                                <i class="fi-check text-primary fs-sm mt-1 me-2"></i>
+                                <span>24.85 €/H (jours ouvrables)</span>
+                            </li>
+                            <li class="d-flex">
+                                <i class="fi-check text-primary fs-sm mt-1 me-2"></i>
+                                <span>31.25 €/H (dimanches et jours fériés)</span>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card border-1 card-hover">
+                    <div class="card-body">
+
+                        <h2 class="h5 fw-normal fw-bolder text-center py-1 mb-0">
+                            Mandataire
+                        </h2>
+                        <div class="d-flex align-items-end justify-content-center mb-4"></div>
+
+                        <ul class="list-unstyled d-block mb-9 mx-auto" style="max-width: 16rem;">
+                            <li class="d-flex">
+                                <i class="fi-check text-primary fs-sm mt-1 me-2"></i>
+                                <span>
+                                    32,70 € pour une presence totale mensuelle inférieure à 25 heures par semaine
+                                </span>
+                            </li>
+
+                            <li class="d-flex">
+                                <i class="fi-check text-primary fs-sm mt-1 me-2"></i>
+                                <span>
+                                    31,30 € pour une presence totale mensuelle comprise de 26 à 40 heures par semaine
+                                </span>
+                            </li>
+
+                            <li class="d-flex">
+                                <i class="fi-check text-primary fs-sm mt-1 me-2"></i>
+                                <span>
+                                    28,10 € pour une presence totale mensuelle au delà de 40 heures par semaine
+                                </span>
+                            </li>
+
+                            <li class="d-flex">
+                                <i class="fi-check text-primary fs-sm mt-1 me-2"></i>
+                                <span>
+                                    375,35 € pour une presence de  24/24 par semaine
+                                </span>
+                            </li>
+
+
+                        </ul>
+
+                        <p class="text-primary fw-bolder">
+                            Uniquement disponible sur demande de devis au pres de nos services.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 mb-4">
+                <div class="card border-1 card-hover">
+                    <div class="card-body">
+
+                        <h2 class="h5 fw-normal fw-bolder text-center py-1 mb-0">
+                            Accompagnement selon besoin
+                        </h2>
+                        <div class="d-flex align-items-end justify-content-center mb-4"></div>
+                        <ul class="list-unstyled d-block mb-0 mx-auto" style="max-width: 16rem;">
+                            <li class="d-flex"><i class="fi-check text-primary fs-sm mt-1 me-2"></i><span>24.41 €/H + 1 € du km du domicile au rendez-vous (A/R).</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container pb-5 mb-md-3 mt-n2 mt-sm-0">
+        <h2 class="h3 text-center text-sm-start mb-sm-4">
+            Nos partenaires
+        </h2>
+        <div class="tns-carousel-wrapper tns-nav-outside tns-nav-outside-flush">
+            <div class="tns-carousel-inner" data-carousel-options="{&quot;controls&quot;: false, &quot;responsive&quot;: {&quot;0&quot;:{&quot;items&quot;:2},&quot;480&quot;:{&quot;items&quot;:3},&quot;680&quot;:{&quot;items&quot;:4, &quot;gutter&quot;: 12},&quot;850&quot;:{&quot;items&quot;:5, &quot;gutter&quot;: 16},&quot;1100&quot;:{&quot;items&quot;:6, &quot;gutter&quot;: 24}}}">
+                <div class="pb-1">
+                    <a class="swap-image" href="https://www.lassuranceretraite.fr/portail-info/home.html">
+                        <img class="swap-to" src="assets/img/partenaires/cnav.png" width="196" alt="">
+                        <img class="swap-from" src="assets/img/partenaires/cnav.png" width="196" alt="">
+                    </a>
+                </div>
+
+                <div class="pb-1">
+                    <a class="swap-image" href="https://www.enim.eu/">
+                        <img class="swap-to" src="assets/img/partenaires/enim.png" width="196" alt="">
+                        <img class="swap-from" src="assets/img/partenaires/enim.png" width="196" alt="">
+                    </a>
+                </div>
+
+                <div class="pb-1">
+                    <a class="swap-image" href="https://www.ameli.fr/">
+                        <img class="swap-to" src="assets/img/partenaires/cpam92.png" width="196" alt="">
+                        <img class="swap-from" src="assets/img/partenaires/cpam92.png" width="196" alt="">
+                    </a>
+                </div>
+
+                <div class="pb-1">
+                    <a class="swap-image" href="https://www.ameli.fr/">
+                        <img class="swap-to" src="assets/img/partenaires/Cpam95.png" width="196" alt="">
+                        <img class="swap-from" src="assets/img/partenaires/Cpam95.png" width="196" alt="">
+                    </a>
+                </div>
+
+                <div class="pb-1">
+                    <a class="swap-image" href="https://www.ameli.fr/">
+                        <img class="swap-to" src="assets/img/partenaires/cpam93.png" width="196" alt="">
+                        <img class="swap-from" src="assets/img/partenaires/cpam93.png" width="196" alt="">
+                    </a>
+                </div>
+
+                <div class="pb-1">
+                    <a class="swap-image" href="javascript:">
+                        <img class="swap-to" src="assets/img/partenaires/logo-fnass.png" width="196" alt="">
+                        <img class="swap-from" src="assets/img/partenaires/logo-fnass.png" width="196" alt="">
+                    </a>
+                </div>
+
+                <div class="pb-1">
+                    <a class="swap-image" href="https://www.mgen.fr/">
+                        <img class="swap-to" src="assets/img/partenaires/mgen.png" width="196" alt="">
+                        <img class="swap-from" src="assets/img/partenaires/mgen.png" width="196" alt="">
+                    </a>
+                </div>
+
+                <div class="pb-1">
+                    <a class="swap-image" href="https://www.evolia93.fr/">
+                        <img class="swap-to" src="assets/img/partenaires/Evolia93.png" width="196" alt="">
+                        <img class="swap-from" src="assets/img/partenaires/Evolia93.png" width="196" alt="">
+                    </a>
+                </div>
+
+                <div class="pb-1">
+                    <a class="swap-image" href="https://www.unisap95.fr/">
+                        <img class="swap-to" src="assets/img/partenaires/unisap95.png" width="196" alt="">
+                        <img class="swap-from" src="assets/img/partenaires/unisap95.png" width="196" alt="">
+                    </a>
+                </div>
+
+                <div class="pb-1">
+                    <a class="swap-image" href="https://cap-92.fr/">
+                        <img class="swap-to" src="assets/img/partenaires/Cap92.png" width="196" alt="">
+                        <img class="swap-from" src="assets/img/partenaires/Cap92.png" width="196" alt="">
+                    </a>
+                </div>
+
+                <div class="pb-1">
+                    <a class="swap-image" href="https://www.cnsa.fr/outils-methodes-et-territoires/dispositifs-dappui-a-la-coordination">
+                        <img class="swap-to" src="assets/img/partenaires/maia-logo.png" width="196" alt="">
+                        <img class="swap-from" src="assets/img/partenaires/maia-logo.png" width="196" alt="">
+                    </a>
+                </div>
+
+
+                <div class="pb-1">
+                    <a class="swap-image" href="https://www.domiserve.com/">
+                        <img class="swap-to" src="assets/img/partenaires/Domiserve.png" width="196" alt="">
+                        <img class="swap-from" src="assets/img/partenaires/Domiserve.png" width="196" alt="">
+                    </a>
+                </div>
+
+                <div class="pb-1">
+                    <a class="swap-image" href="http://www.agircarrco-actionsociale.fr/agir/le-service-sortir-plus/">
+                        <img class="swap-to" src="assets/img/partenaires/SortirPlus.png" width="196" alt="">
+                        <img class="swap-from" src="assets/img/partenaires/SortirPlus.png" width="196" alt="">
+                    </a>
+                </div>
+
+                <div class="pb-1">
+                    <a class="swap-image" href="https://www.b2v.fr/">
+                        <img class="swap-to" src="assets/img/partenaires/B2V.png" width="196" alt="">
+                        <img class="swap-from" src="assets/img/partenaires/B2V.png" width="196" alt="">
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <div class="modal fade" id="cost-calculator" data-backdrop="static" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header d-block position-relative border-0 px-sm-5 px-4">
+                    <h3 class="h4 modal-title mt-4 text-center">
+                        <i class="fi-calculator me-2"></i>
+                        Simulateur de services
+                    </h3>
+                    <button  class="btn-close position-absolute top-0 end-0 mt-3 me-3" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body px-sm-5 px-4">
+                    <form class="needs-validation" novalidate="">
+                        <div class="mb-3">
+                            <label for="service" class="form-label">Type de Service :</label>
+                            <select id="service" class="form-select">
+                                <option value="aidesMenageres">
+                                    Aide et maintien à domicile
+                                </option>
+                                <option value="transportAccompagnement">Transport et Accompagnement</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3 fw-bolder text-primary">
+                            Localité : Ile de France
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="nbHeures" class="form-label">
+                                Nombre d'heures :
+                                <br>
+                                <span class="fw-normal fw-bolder text-primary">
+                                    Semaine (lundi au samedi sauf dimanche et jours fériés)
+                                </span>
+                            </label>
+                            <input type="number" id="nbHeures" class="form-control" value="0">
+                            <div class="invalid-feedback" id="nbHeuresError"></div>
+                        </div>
+
+
+                        <div class="mb-3">
+                            <label for="nbHeuresDimanche" class="form-label">
+                                Nombre d'heures :
+                                <br>
+                                <span class="fw-normal fw-bolder text-primary">
+                                    Dimanche et jours fériés
+                                </span>
+                            </label>
+                            <input type="number" id="nbHeuresDimanche" class="form-control" value="0">
+                            <div class="invalid-feedback" id="nbHeuresDimancheError"></div>
+                        </div>
+
+                        <button class="btn btn-primary d-block w-100 mb-4" type="button" onclick="calculerTarif()">
+                            <i class="fi-calculator me-2"></i>
+                            Simuler le coût
+                        </button>
+
+                        <p id="resultat"></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+
+
+{% block javascripts %}
+    <script>
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var closeButton = document.querySelector('#cost-calculator .btn-close');
+
+            closeButton.addEventListener('click', function () {
+                // Réinitialiser les champs du formulaire
+                document.getElementById("nbHeures").value = '0';
+                document.getElementById("nbHeuresDimanche").value = '0';
+                document.getElementById("resultat").innerHTML = '';
+
+                // Fermer le modal
+                var modal = document.getElementById('cost-calculator');
+                var modalInstance = bootstrap.Modal.getInstance(modal);
+                modalInstance.hide();
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var modal = document.getElementById('cost-calculator');
+
+            // Fonction pour vérifier si un élément est contenu dans le modal
+            function isElementInModal(element) {
+                return modal.contains(element);
+            }
+
+            // Empêcher la fermeture du modal lors d'un clic en dehors de celui-ci
+            document.addEventListener('click', function (event) {
+                if (!isElementInModal(event.target) && !modal.contains(event.target)) {
+                    var modalInstance = bootstrap.Modal.getInstance(modal);
+                    if (modalInstance) {
+                        modalInstance.show();
+                    }
+                }
+            });
+        });
+
+
+        function calculerTarif() {
+            // Récupérer les valeurs des champs du formulaire
+            var nbHeures = parseInt(document.getElementById("nbHeures").value);
+            var nbHeuresDimanche = parseInt(document.getElementById("nbHeuresDimanche").value);
+
+            // Vérifier si les champs sont valides (non négatifs)
+            if (nbHeures < 0 || nbHeuresDimanche < 0) {
+                alert("Le nombre d'heures doit être positif ou nul.");
+                return;
+            }
+
+            // Calculer les coûts
+            var tarifHeure = 24.85;
+            var tarifJourFerie = 31.25;
+
+            var coutHeuresNormales = nbHeures * tarifHeure;
+            var coutHeuresDimanche = nbHeuresDimanche * tarifJourFerie;
+
+            var total = coutHeuresNormales + coutHeuresDimanche;
+
+            // Afficher les résultats
+            document.getElementById("resultat").innerHTML = "Coût des heures normales : " + coutHeuresNormales.toFixed(2) + " €<br>" +
+                "Coût des heures dimanche et jours fériés : " + coutHeuresDimanche.toFixed(2) + " €<br>" +
+                "<strong>Total : " + total.toFixed(2) + " €</strong>";
+        }
+    </script>
+{% endblock %}
